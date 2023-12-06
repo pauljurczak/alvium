@@ -2,8 +2,10 @@
 Debugging lost frames on AVT Alvium 1800 U-052m camera with VmbPy.
 
 # Tests
+Results of running `cap-10-single-cam-test.py` showing gaps in consecutive captured frames.
+
 ## Desktop PC 
-Results of running `cap-10-single-cam-test.py` showing gaps in consecutive captured frames (the largest one misses 7 frames):
+The largest gap misses 7 frames:
 ```
 Linux 6.2.0-37-generic x86_64
 vmbpy: 1.0.3 (using VmbC: 1.0.3, VmbImageTransform: 2.0)  Memory available: 59,839,139,840
@@ -28,6 +30,7 @@ Frame time stamp delta:
 ```
 
 ## Jetson Orin
+No problems with larger than default frame buffer.
 ```
 Linux 5.10.104-tegra aarch64
 vmbpy: 1.0.3 (using VmbC: 1.0.3, VmbImageTransform: 2.0)  Memory available: 28.05 GB
@@ -44,6 +47,7 @@ Frame time stamp delta:
 ```
 
 ## Raspberry Pi 4
+C interface problems, huge gaps, including frame ID ordering:
 ```
 Exception ignored on calling ctypes callback function: <bound method Stream.__frame_cb_wrapper of <vmbpy.stream.Stream object at 0x7f9b178690>>
 Traceback (most recent call last):
