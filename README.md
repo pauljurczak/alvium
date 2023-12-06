@@ -30,7 +30,7 @@ Frame time stamp delta:
 ```
 
 ## Jetson Orin
-No problems with larger than default frame buffer.
+No problems after increasing frame buffer count to 64.
 ```
 Linux 5.10.104-tegra aarch64
 vmbpy: 1.0.3 (using VmbC: 1.0.3, VmbImageTransform: 2.0)  Memory available: 28.05 GB
