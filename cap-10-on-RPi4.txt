@@ -1,0 +1,241 @@
+Exception ignored on calling ctypes callback function: <bound method Stream.__frame_cb_wrapper of <vmbpy.stream.Stream object at 0x7f9b178690>>
+Traceback (most recent call last):
+  File "/home/paul/.local/lib/python3.11/site-packages/vmbpy/stream.py", line 554, in __frame_cb_wrapper
+    raise e
+  File "/home/paul/.local/lib/python3.11/site-packages/vmbpy/stream.py", line 546, in __frame_cb_wrapper
+    context.frames_handler(self._parent_cam, self, frame)
+  File "/home/paul/profiler/cap-10-single-cam-test.py", line 20, in frameHandler
+    frameT[iFrame] = frame.get_timestamp()
+    ~~~~~~^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Exception ignored on calling ctypes callback function: <bound method Stream.__frame_cb_wrapper of <vmbpy.stream.Stream object at 0x7f9b178690>>
+Traceback (most recent call last):
+  File "/home/paul/.local/lib/python3.11/site-packages/vmbpy/stream.py", line 554, in __frame_cb_wrapper
+    raise e
+  File "/home/paul/.local/lib/python3.11/site-packages/vmbpy/stream.py", line 546, in __frame_cb_wrapper
+    context.frames_handler(self._parent_cam, self, frame)
+  File "/home/paul/profiler/cap-10-single-cam-test.py", line 20, in frameHandler
+    frameT[iFrame] = frame.get_timestamp()
+    ~~~~~~^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Linux 6.1.21-v8+ aarch64
+vmbpy: 1.0.3 (using VmbC: 1.0.3, VmbImageTransform: 2.0)  Memory available:  7.37 GB
+Requested/delivered 1200.000/846.758 fps  2,115,072,000 bps  100000 frames
+Gaps in consecutive Frame IDs: 0, 8
+Handler times:  0.733   0.988  [3.24  3.261 3.583 3.62  3.862 3.902 4.997 5.005 5.162 5.775] [ms]
+
+Frame ID delta:
+-136: 1
+-135: 1
+-129: 1
+-120: 1
+-111: 1
+-108: 1
+-106: 1
+-105: 1
+-104: 1
+-103: 1
+-102: 7
+-101: 24
+-100: 32
+-99: 19
+-98: 26
+-97: 25
+-96: 61
+-95: 56
+-94: 70
+-93: 107
+-92: 106
+-91: 58
+-90: 45
+-89: 35
+-88: 32
+-87: 19
+-86: 18
+-85: 9
+-84: 5
+-83: 2
+-82: 4
+1: 58023
+2: 40327
+3: 88
+4: 12
+5: 6
+6: 2
+7: 1
+84: 1
+85: 4
+86: 4
+87: 3
+88: 12
+89: 16
+90: 26
+91: 31
+92: 34
+93: 47
+94: 64
+95: 101
+96: 108
+97: 63
+98: 48
+99: 64
+100: 25
+101: 25
+102: 20
+103: 24
+104: 33
+105: 6
+106: 2
+107: 1
+109: 1
+110: 1
+111: 1
+115: 1
+123: 1
+132: 1
+138: 1
+139: 1
+
+Frame time stamp delta:
+-113.3425ms: 1
+-112.5091ms: 1
+-111.6757ms: 1
+-107.5087ms: 1
+-100.0081ms: 1
+-98.3413ms: 1
+-95.0077ms: 1
+-95.0076ms: 2
+-92.5075ms: 1
+-92.5074ms: 1
+-91.6741ms: 1
+-90.8407ms: 1
+-90.0073ms: 1
+-88.3405ms: 1
+-87.5071ms: 1
+-86.6737ms: 1
+-85.8402ms: 1
+-85.0069ms: 12
+-85.0068ms: 12
+-84.1735ms: 66
+-84.1734ms: 24
+-83.3401ms: 39
+-83.34ms: 32
+-82.5067ms: 40
+-82.5066ms: 14
+-81.6733ms: 28
+-81.6732ms: 11
+-80.8399ms: 29
+-80.8398ms: 15
+-80.0065ms: 35
+-80.0064ms: 45
+-79.1731ms: 40
+-79.173ms: 28
+-78.3397ms: 57
+-78.3396ms: 33
+-77.5063ms: 94
+-77.5062ms: 50
+-76.6729ms: 97
+-76.6728ms: 47
+-75.8395ms: 59
+-75.8394ms: 40
+-75.0061ms: 35
+-75.006ms: 31
+-74.1727ms: 29
+-74.1726ms: 44
+-73.3393ms: 33
+-73.3392ms: 36
+-72.5059ms: 29
+-72.5058ms: 19
+-71.6725ms: 17
+-71.6724ms: 18
+-70.8391ms: 11
+-70.839ms: 6
+-70.0057ms: 7
+-70.0056ms: 9
+-69.1723ms: 8
+-69.1722ms: 1
+-68.3389ms: 3
+-68.3388ms: 2
+-67.5055ms: 1
+-66.672ms: 1
+-65.8386ms: 1
+-65.0052ms: 1
+-63.3384ms: 1
+-57.5046ms: 1
+0.8334ms: 57049
+0.8335ms: 387
+1.6668ms: 39301
+1.6669ms: 537
+2.5002ms: 84
+2.5003ms: 2
+3.3336ms: 12
+4.167ms: 5
+4.1671ms: 1
+5.0004ms: 2
+5.8338ms: 1
+59.1714ms: 1
+65.0052ms: 1
+66.672ms: 1
+67.5054ms: 1
+68.3388ms: 1
+70.0056ms: 1
+70.0057ms: 2
+70.839ms: 2
+70.8391ms: 6
+71.6724ms: 3
+71.6725ms: 7
+72.5058ms: 7
+72.5059ms: 7
+73.3392ms: 9
+73.3393ms: 14
+74.1726ms: 15
+74.1727ms: 15
+75.006ms: 24
+75.0061ms: 38
+75.8394ms: 34
+75.8395ms: 33
+76.6728ms: 37
+76.6729ms: 30
+77.5062ms: 33
+77.5063ms: 38
+78.3396ms: 42
+78.3397ms: 64
+79.173ms: 45
+79.1731ms: 91
+80.0064ms: 43
+80.0065ms: 104
+80.8398ms: 29
+80.8399ms: 47
+81.6732ms: 23
+81.6733ms: 39
+82.5066ms: 43
+82.5067ms: 38
+83.34ms: 12
+83.3401ms: 33
+84.1734ms: 12
+84.1735ms: 26
+85.0068ms: 11
+85.0069ms: 38
+85.8402ms: 23
+85.8403ms: 37
+86.6736ms: 29
+86.6737ms: 66
+87.507ms: 14
+87.5071ms: 21
+88.3404ms: 1
+88.3405ms: 1
+89.1738ms: 1
+90.8407ms: 1
+91.6741ms: 1
+92.5075ms: 1
+93.3409ms: 1
+95.0077ms: 1
+95.841ms: 1
+95.8411ms: 1
+97.5078ms: 1
+98.3412ms: 1
+99.1747ms: 1
+102.5083ms: 2
+110.0089ms: 1
+115.0093ms: 2
+115.8427ms: 1
