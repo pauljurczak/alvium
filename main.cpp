@@ -43,7 +43,7 @@ int main() {
 
     for (auto cam: {camL, camR}) 
       if (cam->GetFeatureByName("DeviceLinkThroughputLimit", fp) != OK  ||  fp->SetValue(450'000'000) != OK  ||
-          // cam->GetFeatureByName("AcquisitionFrameRateEnable", fp) != OK ||  fp->SetValue("On") != OK  ||
+          // cam->GetFeatureByName("AcquisitionFrameRateEnable", fp) != OK ||  fp->SetValue("true") != OK  ||
           // cam->GetFeatureByName("AcquisitionFrameRate", fp) != OK       ||  fp->SetValue(10) != OK  ||
           cam->GetFeatureByName("ExposureAuto", fp) != OK               ||  fp->SetValue("Off") != OK  ||
           cam->GetFeatureByName("ExposureTime", fp) != OK               ||  fp->SetValue(EXP) != OK  ||
