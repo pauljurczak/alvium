@@ -45,7 +45,7 @@ if __name__ == '__main__':
     pid.nice(-20)
 
     with vmbpy.VmbSystem.get_instance() as vmb, vmb.get_all_cameras()[0] as cam:
-      # cam.DeviceLinkThroughputLimit.set(reqThroughput)
+      cam.DeviceLinkThroughputLimit.set(390_000_000)
       cam.ExposureAuto.set(False)
       cam.ExposureTime.set(exp)
       cam.GainAuto.set(False)
@@ -57,7 +57,7 @@ if __name__ == '__main__':
       cam.OffsetY.set(Y0)
       cam.AcquisitionFrameRateEnable.set(True)
       cam.AcquisitionFrameRate.set(reqFPS)
-      cam.DeviceLinkThroughputLimit.set(380_000_000)
+      # cam.DeviceLinkThroughputLimit.set(390_000_000)
       cam.start_streaming(handler=frameHandler, buffer_count=64)
 
       while iFrame[0] < nFrames-1:
